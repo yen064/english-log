@@ -18,6 +18,7 @@ These standards are a starting point. I will change them whenever my needs chang
 ```
 english-log/
 ├── sessions/          # One file per practice session
+├── sessions.md        # Index of all sessions
 ├── archived-history/  # Records of problems and how they were investigated
 ├── vocabulary.md      # Accumulated words and phrases
 ├── mistakes.md        # Recurring mistakes, grouped by type
@@ -131,7 +132,8 @@ When a session ends (or when I paste a conversation and ask you to record it):
 2. Fill in corrections and new vocabulary
 3. Append new vocabulary to `vocabulary.md` with its Google Translate link (skip duplicates, keep alphabetical)
 4. Update `mistakes.md` if a mistake type recurs; group by category (tense, articles, prepositions, word choice, etc.)
-5. Commit with message: `session: YYYY-MM-DD topic`
+5. Add a row to `sessions.md` (oldest first, newest at the bottom): date, type, topic, number of questions, and a link to the session file. The number of questions is the count of numbered main questions Claude asked in that session; use `-` if the session had none.
+6. Commit with message: `session: YYYY-MM-DD topic`
 
 ## Rules
 - Keep my original sentences unchanged in the Conversation section and in my answers (the sentence-by-sentence 中文 goes beside them, not in place of them)

@@ -7,6 +7,7 @@
 | 路徑 | 內容 |
 |------|------|
 | `sessions/` | 每次練習一個檔案,檔名為 `YYYY-MM-DD-topic.md` |
+| `sessions.md` | 所有 session 的索引(日期、類型、主題、題數、連結) |
 | `archived-history/` | 遇到的問題與調查過程的記錄,一個問題一個檔案 |
 | `vocabulary.md` | 累積的單字與片語(依字母排序) |
 | `mistakes.md` | 反覆出現的錯誤,依類型分類(時態、冠詞、介系詞、用字等) |
