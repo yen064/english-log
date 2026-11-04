@@ -55,9 +55,15 @@ You pick a topic from current events and start the conversation yourself. It is 
 5. Check my wishes: if I say the topic is too hard, boring or off, switch topics.
 
 ## Getting video captions
-- Preferred: `yt-dlp` to download subtitles only (no video), e.g. `yt-dlp --skip-download --write-subs --write-auto-subs --sub-langs "en.*" --convert-subs srt URL`, in a scratch directory outside the repo.
-- Fallback: web fetch of the video page, or ask me to paste the transcript (YouTube → "Show transcript").
-- Never commit the downloaded subtitle files.
+**Status: paused.** No automatic method has worked in this environment yet. What was tried and why it failed: [YouTube subtitle retrieval failed (2026-11-04)](archived-history/youtube-subtitle-retrieval-failed-20261104.md).
+
+- Do not assume `yt-dlp` is available: it is not installed (Homebrew install fails on this Mac), and a test run on the version pip could install was rejected by YouTube.
+- Plain web fetch and `curl` do not return subtitles, and the public transcript sites and APIs I tested are blocked or need a real browser.
+- Never try to get around bot checks, captchas, sign-in requirements or access tokens such as Firebase App Check.
+- Keep local impact minimal. Do not install software or create files outside this repo's scratch area to fetch captions unless I ask.
+- Which method to try next is my decision. Offer options, do not pick one.
+- If I give you a transcript or caption text, use it.
+- Never commit downloaded subtitle files.
 
 ## Session file format
 Filename: `sessions/YYYY-MM-DD-topic.md` (kebab-case topic). One shared format for all three types.

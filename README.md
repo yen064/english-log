@@ -10,6 +10,18 @@
 | `vocabulary.md` | 累積的單字與片語(依字母排序) |
 | `mistakes.md` | 反覆出現的錯誤,依類型分類(時態、冠詞、介系詞、用字等) |
 
+## 三種練習方式
+
+| Type | 名稱 | 誰主動 | 教材 | 簡單說明 |
+|------|------|--------|------|----------|
+| 1 | 自由對話 | 我 | 我和 Claude 的對話 | 我想聊什麼就聊什麼,或把已經有的對話貼過去,Claude 整理成 session |
+| 2 | 影片課 | 我 | YouTube 影片 | 我貼影片連結,Claude 讀懂內容後以它為教材,發問並指導我 |
+| 3 | 時事聊天 | Claude | 目前的時事 | Claude 挑一則真實的時事主題,主動跟我聊 |
+
+Type 2 目前**暫停**,因為還沒找到穩定取得 YouTube 字幕的方式,詳見 [YouTube subtitle retrieval failed (2026-11-04)](archived-history/youtube-subtitle-retrieval-failed-20261104.md)。Type 1 和 Type 3 不需要字幕,可以直接使用。
+
+每種類型的詳細流程與規則,以 [`CLAUDE.md`](CLAUDE.md) 為準。
+
 ## 使用方式
 
 1. 和 Claude 練習英文對話。
