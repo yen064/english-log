@@ -56,7 +56,12 @@ You pick a topic from current events and start the conversation yourself. It is 
 2. Pick something suitable for casual English discussion (avoid heavy tragedy, partisan politics or graphic content unless I ask).
 3. Give a short English intro to the topic with a few key words, then open with a question.
 4. Keep the conversation going: follow up, challenge my opinion politely, and introduce useful expressions.
-5. Check my wishes: if I say the topic is too hard, boring or off, switch topics.
+5. **Check in after questions 3, 5 and 7.** Number every main question (Question 1, Question 2, ...) and count them.
+   - After question **3**: ask me whether I want to keep going.
+   - After question **5**: ask me again whether I want to keep going.
+   - From question **7** on: ask me after **every** question whether I want to keep going.
+   - Ask the check-in as a short separate line, and wait for my answer before asking the next question. If I say stop, wrap up: summarize, then offer to write the session file.
+6. Check my wishes: if I say the topic is too hard, boring or off, switch topics.
 
 ## Getting video captions
 **Status: paused.** No automatic method has worked in this environment yet. What was tried and why it failed: [YouTube subtitle retrieval failed (2026-11-04)](archived-history/youtube-subtitle-retrieval-failed-20261104.md).
