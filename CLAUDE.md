@@ -31,13 +31,14 @@ english-log/
 Notes on problems we ran into and how they were investigated. One markdown file per problem, named `problem-name-in-english-YYYYMMDD.md` (kebab-case). Write new records here only when I ask.
 
 ## Session types
-There are three types. Who starts, and what the material is, differs.
+There are four types. Who starts, and what the material is, differs.
 
 | Type | Name | Who starts | Material |
 |------|------|-----------|----------|
 | 1 | Free conversation | Me | A conversation I have with Claude |
 | 2 | Video lesson | Me (I paste a YouTube link) | The video |
 | 3 | Current-events chat | Claude | A current news topic Claude picks |
+| 4 | Continued session | Me (I pick a finished Type 3 or 4 session) | The topic of that finished session |
 
 ### Type 1: Free conversation (I start)
 I start a conversation on any topic, or paste a conversation I already had.
@@ -65,6 +66,19 @@ You pick a topic from current events and start the conversation yourself. It is 
    - Ask the check-in as a short separate line, and wait for my answer before asking the next question. If I say stop, wrap up: summarize, then offer to write the session file.
 6. Check my wishes: if I say the topic is too hard, boring or off, switch topics.
 
+### Type 4: Continued session (I pick a finished session)
+I continue the topic of a session that is already finished. Only a session that is currently Type 3 or Type 4 can be continued.
+1. Read `sessions.md` and list every finished Type 3 and Type 4 session as a numbered list (number, date, topic, type, number of questions). Sort by number of questions, most first. If the numbers are equal, sort by date, newest first. Wait for me to pick one.
+2. Read the chosen session file to recall the topic, my earlier answers, the corrections and the vocabulary. Remind me in one or two sentences where we stopped.
+3. Continue like Type 3: ask the next questions, follow up, challenge my opinion politely, and introduce useful expressions. **Keep the question numbering going** from the last number in that session (if it ended at Question 7, the next one is Question 8). The check-in rule continues too, so from question 7 on, ask after every question whether I want to keep going.
+4. When I stop, update the **same file**. Never rename it and never create a new file for the same topic:
+   - Add a row to **Launch history** (see the session file format). If the session has none yet, create the section and start with a row for the original launch.
+   - Add this launch's dialogue as a new section `## Conversation, Launch N (YYYY-MM-DD)`, in the usual Conversation format, after the earlier conversation.
+   - Append the new corrections to the Corrections table and the new vocabulary to New vocabulary.
+   - Change the file's `**Type:**` to `4 Continued session`.
+   - Update the session's row in `sessions.md`: Type = `4`, Date = the date of the latest launch, Questions = the total number of questions across all launches. The link stays the same, and the row keeps its position.
+   - Update `vocabulary.md` and `mistakes.md` as usual, then commit with `session: YYYY-MM-DD topic (continued)`.
+
 ## Getting video captions
 **Status: paused.** No automatic method has worked in this environment yet. What was tried and why it failed: [YouTube subtitle retrieval failed (2026-11-04)](archived-history/youtube-subtitle-retrieval-failed-20261104.md).
 
@@ -77,14 +91,22 @@ You pick a topic from current events and start the conversation yourself. It is 
 - Never commit downloaded subtitle files.
 
 ## Session file format
-Filename: `sessions/YYYY-MM-DD-topic.md` (kebab-case topic). One shared format for all three types.
+Filename: `sessions/YYYY-MM-DD-topic.md` (kebab-case topic). The date is the date of the first launch. A continued session (Type 4) always keeps its original filename. One shared format for all four types.
 
 ```markdown
 # Topic
 
 **Date:** YYYY-MM-DD
-**Type:** 1 Free conversation | 2 Video lesson | 3 Current-events chat
+**Type:** 1 Free conversation | 2 Video lesson | 3 Current-events chat | 4 Continued session
 **Source:** (Type 2: [Video title](URL), channel, length. Type 3: news source and date. Type 1: omit)
+
+## Launch history
+(Only when the session has been continued. See below.)
+
+| Launch | Date | Type | Question numbers | Count |
+|--------|------|------|------------------|-------|
+| 1 | YYYY-MM-DD | 3 | 1–7 | 7 |
+| 2 | YYYY-MM-DD | 4 | 8–10 | 3 |
 
 ## Summary
 (Types 2 and 3: 3–5 sentences in simple English)
@@ -115,6 +137,11 @@ Vocabulary link rule:
   - `<ENCODED_TEXT>` is the word or phrase, URL-encoded (space → `%20`, `/` → `%2F`, `'` → `%27`). Use only the word or phrase itself, not the example sentence.
 - Example: `- **spacecraft** ([Google Translate](https://translate.google.com/?sl=en&tl=zh-TW&text=spacecraft&op=translate)): a vehicle built to travel in space (太空船) — The spacecraft will enter orbit next month.`
 
+Launch history rules:
+- One row per launch. A launch is one sitting: the original session, or one later continuation.
+- `Type` is the type of that launch (3 for the original Type 3 launch, 4 for each continuation). `Question numbers` is the range of numbered questions in that launch, and `Count` is how many.
+- Place the section right after the header fields and before the Summary.
+
 Conversation section rules:
 - Include the **complete** dialogue, both sides, every turn. Never summarize, shorten or skip lines.
 - Split each turn into sentences. Under each English sentence, put its 中文 translation on the next line, starting with `→`.
@@ -128,7 +155,7 @@ Conversation section rules:
 - Use Taiwan wording (e.g. 軟體, 影片, 資料), not Mainland terms.
 
 ## Workflow
-When a session ends (or when I paste a conversation and ask you to record it):
+When a session ends (or when I paste a conversation and ask you to record it). For a Type 4 session, follow the Type 4 section instead of the steps below:
 1. Create the session file using the format above
 2. Fill in corrections and new vocabulary
 3. Append new vocabulary to `vocabulary.md` with its Google Translate link (skip duplicates, keep alphabetical)

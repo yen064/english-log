@@ -1,6 +1,6 @@
 # Sessions
 
-Index of all practice sessions. Oldest first. Details are in each session file.
+Index of all practice sessions. Rows are in the order the sessions were first created. A session that has been continued shows Type 4, the date of its latest launch, and its total number of questions. Details are in each session file.
 
 | Date | Type | Topic | Questions | Link |
 |------|------|-------|-----------|------|
