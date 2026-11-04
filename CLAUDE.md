@@ -99,7 +99,7 @@ Filename: `sessions/YYYY-MM-DD-topic.md` (kebab-case topic). The date is the dat
 
 Use [`session-template.md`](session-template.md) as the template. Copy it for every new session file and keep its section order and its 目錄 (table of contents) links at the top.
 
-The Vocabulary link rule (every vocabulary item gets a Google Translate link, in the session file and in `vocabulary.md`), the Launch history rules, the Conversation section rules and the Phrases of the day rules are written at the bottom of `session-template.md`. Read them there and follow them.
+The Vocabulary link rule (every vocabulary item gets a Google Translate link, in the session file and in `vocabulary.md`, plus the source-link rule for `vocabulary.md` and `phrases.md`), the Launch history rules, the Conversation section rules and the Phrases of the day rules are written at the bottom of `session-template.md`. Read them there and follow them.
 
 ## Bilingual convention (English ↔ 中文)
 - **Conversation section**: full English dialogue, with a sentence-by-sentence 中文 translation under every English sentence.
@@ -112,8 +112,8 @@ The Vocabulary link rule (every vocabulary item gets a Google Translate link, in
 When a session ends (or when I paste a conversation and ask you to record it). For a Type 4 session, follow the Type 4 section instead of the steps below:
 1. Create the session file using the format above
 2. Fill in corrections, new vocabulary and the phrases of the day (1 to 5)
-3. Append new vocabulary to `vocabulary.md` with its Google Translate link (skip duplicates, keep alphabetical)
-4. Append each phrase of the day to `phrases.md` (one line each, with its Google Translate link and a link to the session file; keep alphabetical)
+3. Append new vocabulary to `vocabulary.md` with its Google Translate link and a source link [1] back to the session file (keep alphabetical). If the word is already there, add the next number, e.g. [1][2], instead of a new line
+4. Append each phrase of the day to `phrases.md` (one line each, with its Google Translate link and a source link [1] back to the session file; keep alphabetical; if the phrase is already there, add the next number instead)
 5. Update `mistakes.md` if a mistake type recurs; group by category (tense, articles, prepositions, word choice, etc.)
 6. Add a row to `sessions.md` (oldest first, newest at the bottom): date, type, topic, number of questions, and a link to the session file. The number of questions is the count of numbered main questions Claude asked in that session; use `-` if the session had none.
 7. Commit with message: `session: YYYY-MM-DD topic`

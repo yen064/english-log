@@ -65,6 +65,7 @@ Table of contents (目錄) line:
 
 Vocabulary link rule:
 - Every vocabulary item gets a clickable Google Translate link right after the word, so I can open it and listen to the pronunciation or look up more meanings. This applies in both places: the session file and vocabulary.md. When you append an item to vocabulary.md, keep the same line, link included.
+- Source links: every entry in vocabulary.md and phrases.md ends with a link back to the session file it came from, written as [1](sessions/FILE.md). If the same word or phrase appears in more than one session, do not add a duplicate line. Add the next number to the existing line instead, e.g. [1](sessions/A.md)[2](sessions/B.md). Number the sessions in the order they happened. Never write the full file name as the link text.
 - Link format: https://translate.google.com/?sl=en&tl=zh-TW&text=<ENCODED_TEXT>&op=translate
   - sl=en is the source language (English); tl=zh-TW is the target language (Traditional Chinese).
   - <ENCODED_TEXT> is the word or phrase, URL-encoded (space -> %20, / -> %2F, ' -> %27). Use only the word or phrase itself, not the example sentence.
@@ -85,5 +86,5 @@ Phrases of the day rules:
 - Every phrase uses the full format: meaning, tone, 2–3 example sentences with 中文, similar expressions, and where it came from.
 - Claude chooses them: a phrase from this conversation (one I used or learned), or a new, useful one related to the topic that did not come up. A session can mix both.
 - Each phrase gets a Google Translate link, using the Vocabulary link rule above.
-- Also add every phrase to phrases.md (one line each, alphabetical, with the link and a link back to the session file).
+- Also add every phrase to phrases.md (one line each, alphabetical, with the link and the source links described above).
 -->
