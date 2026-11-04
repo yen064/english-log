@@ -8,8 +8,10 @@
 |------|------|
 | `sessions/` | 每次練習一個檔案，檔名為 `YYYY-MM-DD-topic.md` |
 | `sessions.md` | 所有 session 的索引(日期、類型、主題、題數、連結) |
+| `session-template.md` | session 檔的樣板（含目錄連結），新增 session 時照這個格式 |
 | `archived-history/` | 遇到的問題與調查過程的記錄，一個問題一個檔案 |
 | `vocabulary.md` | 累積的單字與片語(依字母排序) |
+| `phrases.md` | 每次 session 的「今日片語」（每次 1 到 5 個，依字母排序，附來源連結） |
 | `mistakes.md` | 反覆出現的錯誤，依類型分類(時態、冠詞、介系詞、用字等) |
 
 ## 四種練習方式
@@ -34,6 +36,7 @@ Type 2 目前**暫停**，因為還沒找到穩定取得 YouTube 字幕的方式
 ## 複習建議
 
 - 想複習單字：看 `vocabulary.md`。
+- 想複習片語：看 `phrases.md`。
 - 想知道自己常犯什麼錯：看 `mistakes.md`。
 - 想回顧某次對話：先打開索引 [`sessions.md`](sessions.md)，用日期、類型或主題找到那一次，再點連結進入 `sessions/` 裡的完整記錄。
 
