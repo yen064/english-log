@@ -6,3 +6,4 @@ Index of all practice sessions. Rows are in the order the sessions were first cr
 |------|------|-------|-----------|------|
 | 2026-11-04 | 3 Current-events chat | BepiColombo and the Moon | 7 | [open](sessions/2026-11-04-bepicolombo-moon-chat.md) |
 | 2026-11-04 | 3 Current-events chat | Chihuahua riding a tortoise | 3 | [open](sessions/2026-11-04-chihuahua-tortoise-chat.md) |
+| 2026-11-04 | 2 Video lesson | White House press Q&A video | 3 | [open](sessions/2026-11-04-white-house-press-qa-video.md) |
