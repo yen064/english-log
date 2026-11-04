@@ -10,7 +10,7 @@
 | `sessions.md` | 所有 session 的索引(日期、類型、主題、題數、連結) |
 | `session-template.md` | session 檔的樣板（含目錄連結），新增 session 時照這個格式 |
 | `archived-history/` | 遇到的問題與調查過程的記錄，一個問題一個檔案 |
-| `vocabulary.md` | 累積的單字與片語(依字母排序) |
+| `vocabulary.md` | 累積的單字與片語(依字母排序，附來源連結) |
 | `phrases.md` | 每次 session 的「今日片語」（每次 1 到 5 個，依字母排序，附來源連結） |
 | `mistakes.md` | 反覆出現的錯誤，依類型分類(時態、冠詞、介系詞、用字等) |
 
