@@ -20,6 +20,7 @@ These standards are a starting point. I will change them whenever my needs chang
 english-log/
 ├── sessions/          # One file per practice session
 ├── sessions.md        # Index of all sessions
+├── session-template.md # Template for a session file
 ├── archived-history/  # Records of problems and how they were investigated
 ├── vocabulary.md      # Accumulated words and phrases
 ├── mistakes.md        # Recurring mistakes, grouped by type
@@ -76,6 +77,7 @@ I continue the topic of a session that is already finished. Only a session that 
    - Add this launch's dialogue as a new section `## Conversation, Launch N (YYYY-MM-DD)`, in the usual Conversation format, after the earlier conversation.
    - Append the new corrections to the Corrections table and the new vocabulary to New vocabulary.
    - Change the file's `**Type:**` to `4 Continued session`.
+   - Update the 目錄 line at the top: add the Launch history link and one Conversation link per launch (see the rules in `session-template.md`).
    - Update the session's row in `sessions.md`: Type = `4`, Date = the date of the latest launch, Questions = the total number of questions across all launches. The link stays the same, and the row keeps its position.
    - Update `vocabulary.md` and `mistakes.md` as usual, then commit with `session: YYYY-MM-DD topic (continued)`.
 
@@ -93,59 +95,9 @@ I continue the topic of a session that is already finished. Only a session that 
 ## Session file format
 Filename: `sessions/YYYY-MM-DD-topic.md` (kebab-case topic). The date is the date of the first launch. A continued session (Type 4) always keeps its original filename. One shared format for all four types.
 
-```markdown
-# Topic
+Use [`session-template.md`](session-template.md) as the template. Copy it for every new session file and keep its section order and its 目錄 (table of contents) links at the top.
 
-**Date:** YYYY-MM-DD
-**Type:** 1 Free conversation | 2 Video lesson | 3 Current-events chat | 4 Continued session
-**Source:** (Type 2: [Video title](URL), channel, length. Type 3: news source and date. Type 1: omit)
-
-## Launch history
-(Only when the session has been continued. See below.)
-
-| Launch | Date | Type | Question numbers | Count |
-|--------|------|------|------------------|-------|
-| 1 | YYYY-MM-DD | 3 | 1–7 | 7 |
-| 2 | YYYY-MM-DD | 4 | 8–10 | 3 |
-
-## Summary
-(Types 2 and 3: 3–5 sentences in simple English)
-
-**中文摘要:** (2–3 lines)
-
-## Conversation
-**Me:**
-- English sentence 1
-  → 中文翻譯 1
-
-**Claude:**
-- English sentence 1
-  → 中文翻譯 1
-
-## Corrections
-| Original | Corrected | Note |
-|----------|-----------|------|
-
-## New vocabulary
-- **word / phrase** ([Google Translate](https://translate.google.com/?sl=en&tl=zh-TW&text=word%20%2F%20phrase&op=translate)): meaning (中文) — example sentence
-```
-
-Vocabulary link rule:
-- Every vocabulary item gets a clickable Google Translate link right after the word, so I can open it and listen to the pronunciation or look up more meanings. This applies in **both** places: the session file and `vocabulary.md`. When you append an item to `vocabulary.md`, keep the same line, link included.
-- Link format: `https://translate.google.com/?sl=en&tl=zh-TW&text=<ENCODED_TEXT>&op=translate`
-  - `sl=en` is the source language (English); `tl=zh-TW` is the target language (Traditional Chinese).
-  - `<ENCODED_TEXT>` is the word or phrase, URL-encoded (space → `%20`, `/` → `%2F`, `'` → `%27`). Use only the word or phrase itself, not the example sentence.
-- Example: `- **spacecraft** ([Google Translate](https://translate.google.com/?sl=en&tl=zh-TW&text=spacecraft&op=translate)): a vehicle built to travel in space (太空船) — The spacecraft will enter orbit next month.`
-
-Launch history rules:
-- One row per launch. A launch is one sitting: the original session, or one later continuation.
-- `Type` is the type of that launch (3 for the original Type 3 launch, 4 for each continuation). `Question numbers` is the range of numbered questions in that launch, and `Count` is how many.
-- Place the section right after the header fields and before the Summary.
-
-Conversation section rules:
-- Include the **complete** dialogue, both sides, every turn. Never summarize, shorten or skip lines.
-- Split each turn into sentences. Under each English sentence, put its 中文 translation on the next line, starting with `→`.
-- My English sentences stay exactly as I wrote them, errors included. The 中文 translates what I meant. The fixes go in the Corrections table, not in the dialogue.
+The Vocabulary link rule (every vocabulary item gets a Google Translate link, in the session file and in `vocabulary.md`), the Launch history rules and the Conversation section rules are written at the bottom of `session-template.md`. Read them there and follow them.
 
 ## Bilingual convention (English ↔ 中文)
 - **Conversation section**: full English dialogue, with a sentence-by-sentence 中文 translation under every English sentence.

@@ -1,5 +1,7 @@
 # BepiColombo and the Moon
 
+**目錄：** [Summary](#summary) · [Conversation](#conversation) · [Corrections](#corrections) · [New vocabulary](#new-vocabulary)
+
 **Date:** 2026-11-04
 **Type:** 3 Current-events chat
 **Source:** [ESA: Latest updates, BepiColombo's arrival at Mercury](https://www.esa.int/Science_Exploration/Space_Science/BepiColombo/Latest_updates_BepiColombo_s_arrival_at_Mercury) (accessed 2026-11-04); delay explained in [Space.com](https://space.com/bepicolombo-thruster-issues-mercury-arrival-delay-2026)
