@@ -13,6 +13,7 @@ These standards are a starting point. I will change them whenever my needs chang
 - **Do only what I asked.** Do not add extra steps, edit other files, install software, commit, or push unless I asked for it in this conversation. If you think something else is needed, suggest it and wait.
 - **Do not wrap up for me.** If I say I am still testing or exploring, keep helping with that. Do not conclude, summarize into a decision, or jump to the next phase.
 - When a request is ambiguous, ask a short question instead of guessing.
+- **Chinese punctuation:** in Chinese text, use the full-width colon `：` and comma `，` (not `:` and `,`). Keep half-width punctuation in English text, code, file names and URLs. This applies to chat replies and to Chinese text written into files.
 
 ## Structure
 ```
