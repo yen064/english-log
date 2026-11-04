@@ -34,7 +34,7 @@ Type 2 目前**暫停**,因為還沒找到穩定取得 YouTube 字幕的方式,�
 
 - 想複習單字:看 `vocabulary.md`。
 - 想知道自己常犯什麼錯:看 `mistakes.md`。
-- 想回顧某次對話:到 `sessions/` 找對應日期。
+- 想回顧某次對話:先打開索引 [`sessions.md`](sessions.md),用日期、類型或主題找到那一次,再點連結進入 `sessions/` 裡的完整記錄。
 
 ## 給 Claude 的規則
 
