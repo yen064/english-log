@@ -1,6 +1,6 @@
 # BepiColombo and the Moon
 
-**目錄：** [Summary](#summary) · [Conversation](#conversation) · [Corrections](#corrections) · [New vocabulary](#new-vocabulary)
+**目錄：** [Summary](#summary) · [Conversation](#conversation) · [Corrections](#corrections) · [New vocabulary](#new-vocabulary) · [Phrases of the day](#phrases-of-the-day)
 
 **Date:** 2026-11-04
 **Type:** 3 Current-events chat
@@ -270,3 +270,43 @@ Notes on this record: the tables and word explanations that Claude gave are not 
 - **up to** ([Google Translate](https://translate.google.com/?sl=en&tl=zh-TW&text=up%20to&op=translate)): as much as, but not more than (最多到) — I can pay up to 100 dollars.
 - **with my own eyes** ([Google Translate](https://translate.google.com/?sl=en&tl=zh-TW&text=with%20my%20own%20eyes&op=translate)): personally seeing something yourself (親眼) — I saw the accident with my own eyes.
 - **within my budget** ([Google Translate](https://translate.google.com/?sl=en&tl=zh-TW&text=within%20my%20budget&op=translate)): not more than the money you planned to spend (在預算內) — I'm looking for a laptop within my budget.
+
+## Phrases of the day
+### 1. **the sky is the limit** ([Google Translate](https://translate.google.com/?sl=en&tl=zh-TW&text=the%20sky%20is%20the%20limit&op=translate))
+- **Meaning:** there is no limit to what you can do or get (沒有上限、一切皆有可能)
+- **Tone:** casual
+- **Examples:**
+  - With this much money, the sky is the limit.
+    → 有這麼多錢，一切皆有可能。
+  - If you study hard, the sky is the limit for your career.
+    → 如果你努力學習，你的職涯沒有上限。
+  - For a trip to space, the sky is the limit, and so is the price.
+    → 太空旅行的可能性沒有上限，價格也是。
+- **Similar expressions:** there's no limit (沒有限制), anything is possible (一切皆有可能), reach for the stars (追求遠大目標)
+- **Source:** new, chosen by Claude (fits our talk about space trips and budgets)
+
+### 2. **Seeing is believing** ([Google Translate](https://translate.google.com/?sl=en&tl=zh-TW&text=Seeing%20is%20believing&op=translate))
+- **Meaning:** you only believe something after you see it yourself (眼見為憑)
+- **Tone:** neutral, an idiom
+- **Examples:**
+  - I didn't trust the photos, but seeing is believing.
+    → 我本來不相信這些照片，但眼見為憑。
+  - Some people say the Moon landing was fake. For me, seeing is believing, so I would want to go there.
+    → 有些人說登月是假的。對我來說眼見為憑，所以我想親自去一趟。
+  - Try the food first. Seeing is believing!
+    → 先吃吃看吧。眼見為憑！
+- **Similar expressions:** I'll believe it when I see it (親眼看到才相信), with my own eyes (親眼)
+- **Source:** from this conversation (it fits your doubts about the Moon landing)
+
+### 3. **out of this world** ([Google Translate](https://translate.google.com/?sl=en&tl=zh-TW&text=out%20of%20this%20world&op=translate))
+- **Meaning:** extremely good or amazing; it can also be a joke about space (棒極了、非比尋常)
+- **Tone:** casual
+- **Examples:**
+  - The view from the top of the mountain was out of this world.
+    → 山頂的景色美得不像這個世界。
+  - Their chocolate cake is out of this world.
+    → 他們的巧克力蛋糕好吃得不得了。
+  - A trip to the Moon would be out of this world, in every sense.
+    → 去月球旅行會是不可思議的體驗，從各方面來說都是。
+- **Similar expressions:** amazing (驚人的), fantastic (極好的), incredible (難以置信的)
+- **Source:** new, chosen by Claude (a space joke that fits our topic)

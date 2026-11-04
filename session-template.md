@@ -1,6 +1,6 @@
 # Topic
 
-**目錄：** [Summary](#summary) · [Conversation](#conversation) · [Corrections](#corrections) · [New vocabulary](#new-vocabulary)
+**目錄：** [Summary](#summary) · [Conversation](#conversation) · [Corrections](#corrections) · [New vocabulary](#new-vocabulary) · [Phrases of the day](#phrases-of-the-day)
 
 **Date:** YYYY-MM-DD
 **Type:** 1 Free conversation | 2 Video lesson | 3 Current-events chat | 4 Continued session
@@ -35,10 +35,29 @@
 ## New vocabulary
 - **word / phrase** ([Google Translate](https://translate.google.com/?sl=en&tl=zh-TW&text=word%20%2F%20phrase&op=translate)): meaning (中文) — example sentence
 
+## Phrases of the day
+(1 to 5 phrases. Repeat the block below for each one. Delete these instructions.)
+
+### 1. **phrase** ([Google Translate](https://translate.google.com/?sl=en&tl=zh-TW&text=phrase&op=translate))
+- **Meaning:** meaning in simple English (中文)
+- **Tone:** casual | neutral | formal (語氣)
+- **Examples:**
+  - Example sentence 1
+    → 中文翻譯 1
+  - Example sentence 2
+    → 中文翻譯 2
+  - Example sentence 3
+    → 中文翻譯 3
+- **Similar expressions:** expression 1 (中文), expression 2 (中文)
+- **Source:** from this conversation | new, chosen by Claude
+
+### 2. **phrase**
+(same format as above)
+
 <!-- TEMPLATE RULES: delete this whole block when you copy the template into a session file.
 
 Table of contents (目錄) line:
-- Keep it right under the title. Links: Summary, Conversation, Corrections, New vocabulary.
+- Keep it right under the title. Links: Summary, Conversation, Corrections, New vocabulary, Phrases of the day.
 - If the session has a Launch history section, put [Launch history](#launch-history) first.
 - Continued sessions (Type 4): link every launch's conversation instead of one Conversation link, e.g.
   [Conversation, Launch 1](#conversation) · [Conversation, Launch 2](#conversation-launch-2-yyyy-mm-dd)
@@ -59,4 +78,12 @@ Conversation section rules:
 - Include the complete dialogue, both sides, every turn. Never summarize, shorten or skip lines.
 - Split each turn into sentences. Under each English sentence, put its 中文 translation on the next line, starting with ->.
 - My English sentences stay exactly as I wrote them, errors included. The 中文 translates what I meant. The fixes go in the Corrections table, not in the dialogue.
+
+Phrases of the day rules:
+- Each session has 1 to 5 phrases. Claude decides how many, based on how many good phrases came up in the conversation. Do not pad with weak phrases to reach a number.
+- Continued sessions (Type 4): do not add new phrases. The session keeps the phrases from its original launch.
+- Every phrase uses the full format: meaning, tone, 2–3 example sentences with 中文, similar expressions, and where it came from.
+- Claude chooses them: a phrase from this conversation (one I used or learned), or a new, useful one related to the topic that did not come up. A session can mix both.
+- Each phrase gets a Google Translate link, using the Vocabulary link rule above.
+- Also add every phrase to phrases.md (one line each, alphabetical, with the link and a link back to the session file).
 -->

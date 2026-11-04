@@ -1,6 +1,6 @@
 # Chihuahua Riding a Tortoise
 
-**目錄：** [Summary](#summary) · [Conversation](#conversation) · [Corrections](#corrections) · [New vocabulary](#new-vocabulary)
+**目錄：** [Summary](#summary) · [Conversation](#conversation) · [Corrections](#corrections) · [New vocabulary](#new-vocabulary) · [Phrases of the day](#phrases-of-the-day)
 
 **Date:** 2026-11-04
 **Type:** 3 Current-events chat
@@ -283,3 +283,43 @@ A TikTok video went viral on 4 November 2026. In it, a small Chihuahua rides on 
 - **Get off me!** ([Google Translate](https://translate.google.com/?sl=en&tl=zh-TW&text=Get%20off%20me&op=translate)): move away from my body (從我身上下去！) — Get off me, you're too heavy!
 - **Are you kidding me?** ([Google Translate](https://translate.google.com/?sl=en&tl=zh-TW&text=Are%20you%20kidding%20me&op=translate)): said when you are surprised or annoyed (你開玩笑嗎？) — Are you kidding me? The bus left without us?
 - **What the heck?** ([Google Translate](https://translate.google.com/?sl=en&tl=zh-TW&text=What%20the%20heck&op=translate)): a mild way to say "What the hell?" when you are surprised or annoyed (搞什麼鬼？) — What the heck? Who ate my lunch?
+
+## Phrases of the day
+### 1. **put up with** ([Google Translate](https://translate.google.com/?sl=en&tl=zh-TW&text=put%20up%20with&op=translate))
+- **Meaning:** to accept a bad or annoying situation without complaining (忍受)
+- **Tone:** neutral, common in speech and writing
+- **Examples:**
+  - The tortoise had to put up with a dog on its back.
+    → 陸龜只好忍受背上有一隻狗。
+  - I can't put up with this noise anymore.
+    → 我再也受不了這個噪音了。
+  - How do you put up with your long commute every day?
+    → 你每天是怎麼忍受那麼長的通勤的？
+- **Similar expressions:** tolerate (容忍), stand (忍受，多用於否定句), bear (承受)
+- **Source:** from this conversation (introduced in Question 2, not yet used by me)
+
+### 2. **hitch a ride** ([Google Translate](https://translate.google.com/?sl=en&tl=zh-TW&text=hitch%20a%20ride&op=translate))
+- **Meaning:** to get a free trip in someone's car or on something that moves (搭便車)
+- **Tone:** casual
+- **Examples:**
+  - My car broke down, so I hitched a ride with a stranger.
+    → 我的車壞了，所以我搭了陌生人的便車。
+  - The Chihuahua hitched a ride on the tortoise.
+    → 吉娃娃搭了陸龜的便車。
+  - Can I hitch a ride with you to the station?
+    → 我可以搭你的車去車站嗎？
+- **Similar expressions:** get a lift (British English, 搭便車), thumb a ride (攔便車), hitchhike (在路邊攔便車旅行)
+- **Source:** from this conversation (you used it in Question 3)
+
+### 3. **There's nothing I can do about it.** ([Google Translate](https://translate.google.com/?sl=en&tl=zh-TW&text=There%27s%20nothing%20I%20can%20do%20about%20it&op=translate))
+- **Meaning:** I can't change the situation (我對此無能為力)
+- **Tone:** neutral
+- **Examples:**
+  - The flight is late, and there's nothing I can do about it.
+    → 班機延誤了，我對此無能為力。
+  - I'm sorry about the price, but there's nothing I can do about it.
+    → 價格的事我很抱歉，但我也沒辦法。
+  - It's raining again. There's nothing we can do about it.
+    → 又下雨了，我們也沒辦法。
+- **Similar expressions:** I have no choice (我別無選擇), it's out of my hands (這不是我能掌控的), I can't help it (我也沒辦法)
+- **Source:** from this conversation (you wrote a similar idea in Question 1)
