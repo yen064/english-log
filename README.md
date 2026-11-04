@@ -10,6 +10,9 @@
 | `sessions.md` | 所有 session 的索引(日期、類型、主題、題數、連結) |
 | `session-template.md` | session 檔的樣板（含目錄連結），新增 session 時照這個格式 |
 | `archived-history/` | 遇到的問題與調查過程的記錄，一個問題一個檔案 |
+| `tools/` | 輔助腳本。`get_transcript.py` 用來取得 YouTube 英文字幕（Type 2 使用） |
+| `captions/` | Type 2 影片的完整逐字稿，檔名和對應的 session 檔一致 |
+| `.scratch/` | 本機的 Python 虛擬環境與暫時下載的字幕，已設為 git 不追蹤，不會被提交（clone 後不存在，需要時再建立） |
 | `vocabulary.md` | 累積的單字與片語(依字母排序，附來源連結) |
 | `phrases.md` | 每次 session 的「今日片語」（每次 1 到 5 個，依字母排序，附來源連結） |
 | `mistakes.md` | 反覆出現的錯誤，依類型分類(時態、冠詞、介系詞、用字等) |
@@ -23,7 +26,7 @@
 | 3 | 時事聊天 | Claude | 目前的時事 | Claude 挑一則真實的時事主題，主動跟我聊 |
 | 4 | 延續 | 我 | 已完成的 Type 3 或 4 session | 我從已完成的 session 中挑一個，Claude 接著上次的題號繼續問，並記錄在原本的檔案裡 |
 
-Type 2 目前**暫停**，因為還沒找到穩定取得 YouTube 字幕的方式，詳見 [YouTube subtitle retrieval failed (2026-11-04)](archived-history/youtube-subtitle-retrieval-failed-20261104.md)。Type 1 和 Type 3 不需要字幕，可以直接使用。
+Type 2 的字幕用 `tools/get_transcript.py` 取得（靠 `youtube-transcript-api` 套件，裝在 `.scratch/venv`）。取得失敗時會停下來回報，並給我幾個選項，不會繞過 YouTube 的限制。解法見 [YouTube subtitles retrieved with youtube-transcript-api (2026-11-04)](archived-history/youtube-subtitles-solved-20261104.md)，之前失敗的過程見 [YouTube subtitle retrieval failed (2026-11-04)](archived-history/youtube-subtitle-retrieval-failed-20261104.md)。
 
 每種類型的詳細流程與規則，以 [`CLAUDE.md`](CLAUDE.md) 為準。
 

@@ -22,6 +22,9 @@ english-log/
 ├── sessions.md        # Index of all sessions
 ├── session-template.md # Template for a session file
 ├── archived-history/  # Records of problems and how they were investigated
+├── tools/             # Helper scripts (get_transcript.py for Type 2)
+├── captions/          # Full video captions for Type 2 sessions, same name as the session file
+├── .scratch/          # Local venv and temporary downloads (git-ignored, never commit)
 ├── vocabulary.md      # Accumulated words and phrases
 ├── phrases.md         # Phrases of the day from each session
 ├── mistakes.md        # Recurring mistakes, grouped by type
@@ -54,6 +57,7 @@ I paste a YouTube link. You understand the video from its **subtitles or transcr
 3. Give me a short preparation brief: summary, key vocabulary and useful expressions.
 4. Teach through questions in English: comprehension, opinions, "why do you think...", retelling. Use expressions from the video naturally and ask me to use them.
 5. Correct me as we go and record the whole discussion as the Conversation.
+6. When recording the session, save the full transcript to `captions/` with the same name as the session file (see "Keeping the transcript" below).
 
 ### Type 3: Current-events chat (Claude starts)
 You pick a topic from current events and start the conversation yourself. It is like Type 1, but you take the lead.
@@ -84,15 +88,43 @@ I continue the topic of a session that is already finished. Only a session that 
    - Update `vocabulary.md` and `mistakes.md` as usual, then commit with `session: YYYY-MM-DD topic (continued)`.
 
 ## Getting video captions
-**Status: paused.** No automatic method has worked in this environment yet. What was tried and why it failed: [YouTube subtitle retrieval failed (2026-11-04)](archived-history/youtube-subtitle-retrieval-failed-20261104.md).
+**Status: working (2026-11-04).** Method: the `youtube-transcript-api` Python package, run by `tools/get_transcript.py` inside a venv at `.scratch/venv` (git-ignored). The earlier failed attempts are in [YouTube subtitle retrieval failed (2026-11-04)](archived-history/youtube-subtitle-retrieval-failed-20261104.md); the solution is in [YouTube subtitles retrieved with youtube-transcript-api (2026-11-04)](archived-history/youtube-subtitles-solved-20261104.md).
 
-- Do not assume `yt-dlp` is available: it is not installed (Homebrew install fails on this Mac), and a test run on the version pip could install was rejected by YouTube.
-- Plain web fetch and `curl` do not return subtitles, and the public transcript sites and APIs I tested are blocked or need a real browser.
-- Never try to get around bot checks, captchas, sign-in requirements or access tokens such as Firebase App Check.
-- Keep local impact minimal. Do not install software or create files outside this repo's scratch area to fetch captions unless I ask.
-- Which method to try next is my decision. Offer options, do not pick one.
-- If I give you a transcript or caption text, use it.
-- Never commit downloaded subtitle files.
+### How to run
+```
+.scratch/venv/bin/python -I tools/get_transcript.py <youtube-url-or-id>
+```
+- On success it prints `OK manual|auto-generated ...` and writes `.scratch/transcripts/<video_id>.txt` (git-ignored). Read that file.
+- If `.scratch/venv` does not exist (for example on a fresh clone), tell me and ask before creating it: `python3 -m venv .scratch/venv` then `.scratch/venv/bin/pip install youtube-transcript-api`.
+- Never commit `.scratch/` (the venv and the temporary download). The transcript that is kept goes to `captions/` (see "Keeping the transcript" below).
+
+### Keeping the transcript
+When a Type 2 session is recorded (see the Workflow), save the full transcript in git:
+- Folder: `captions/`. File name: the same as the session file, e.g. `sessions/2026-11-05-topic.md` → `captions/2026-11-05-topic.txt`.
+- Copy it from `.scratch/transcripts/<video_id>.txt`, and put a short header on top: video title, video URL, caption type (manual or auto-generated), and the date it was retrieved.
+- In the session file, link to the transcript file and to the video.
+- Only Type 2 sessions get a transcript file. Do not save one for a session that was given up.
+
+### Auto-generated captions
+Not a failure. Use them, say at the start that they are auto-generated, and flag spots that look wrong (names, technical terms).
+
+### When it fails
+The script prints `FAILED <CATEGORY>: <original error>` and never retries, never uses proxies or cookies, and never gets around blocks. Report the category and the original error to me, then give me these options (adjust to the category):
+1. I paste the transcript, and you use it.
+2. Switch to another video.
+3. Try again later, or upgrade the package (only where the table says so).
+4. Give up this Type 2 session.
+
+| Category | Meaning | What to do |
+|----------|---------|-----------|
+| `NO_ENGLISH_CAPTIONS` | Captions disabled, or no English track | Report, give the options |
+| `BLOCKED` | YouTube refused the request (IP block, login, token) | Stop at once. No proxy, no disguise, no bypass. Give the options |
+| `UNAVAILABLE` | Private, removed, age-restricted, unplayable | Report. Do not try to sign in. Give the options |
+| `NETWORK` | Timeout or cannot connect | Report. Suggest I check the network or VPN, then ask you to retry. Do not upgrade the package |
+| `BROKEN` | Package or YouTube format problem, other | Report. **Ask me first** whether to upgrade the package inside `.scratch/venv` (`.scratch/venv/bin/pip install -U youtube-transcript-api`) and try once more. Only upgrade after I say yes, at most once |
+
+- If the failure has a cause we have not seen before, ask me whether to write it into `archived-history/` (new records only when I ask).
+- Do not install anything outside `.scratch/` to fetch captions, and do not change `tools/get_transcript.py` or this section unless I ask.
 
 ## Session file format
 Filename: `sessions/YYYY-MM-DD-topic.md` (kebab-case topic). The date is the date of the first launch. A continued session (Type 4) always keeps its original filename. One shared format for all four types.
@@ -122,5 +154,5 @@ When a session ends (or when I paste a conversation and ask you to record it). F
 - Keep my original sentences unchanged in the Conversation section and in my answers (the sentence-by-sentence 中文 goes beside them, not in place of them)
 - Explanations in English; pair vocabulary, expressions and summaries with 中文 as described in the bilingual convention; use other Chinese notes only when helpful
 - Remove personal info (real names, company or project details) before committing
-- Type 2: quote only short lines from the video, never the full transcript, and always link the source
+- Type 2: in the session file, quote only short lines from the video (the full transcript lives in `captions/`), and always link the source
 - Type 3: always give the real source and date of the news; never invent news
