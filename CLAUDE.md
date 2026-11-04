@@ -98,8 +98,15 @@ Filename: `sessions/YYYY-MM-DD-topic.md` (kebab-case topic). One shared format f
 |----------|-----------|------|
 
 ## New vocabulary
-- **word / phrase**: meaning (中文) — example sentence
+- **word / phrase** ([Google Translate](https://translate.google.com/?sl=en&tl=zh-TW&text=word%20%2F%20phrase&op=translate)): meaning (中文) — example sentence
 ```
+
+Vocabulary link rule:
+- Every vocabulary item gets a clickable Google Translate link right after the word, so I can open it and listen to the pronunciation or look up more meanings. This applies in **both** places: the session file and `vocabulary.md`. When you append an item to `vocabulary.md`, keep the same line, link included.
+- Link format: `https://translate.google.com/?sl=en&tl=zh-TW&text=<ENCODED_TEXT>&op=translate`
+  - `sl=en` is the source language (English); `tl=zh-TW` is the target language (Traditional Chinese).
+  - `<ENCODED_TEXT>` is the word or phrase, URL-encoded (space → `%20`, `/` → `%2F`, `'` → `%27`). Use only the word or phrase itself, not the example sentence.
+- Example: `- **spacecraft** ([Google Translate](https://translate.google.com/?sl=en&tl=zh-TW&text=spacecraft&op=translate)): a vehicle built to travel in space (太空船) — The spacecraft will enter orbit next month.`
 
 Conversation section rules:
 - Include the **complete** dialogue, both sides, every turn. Never summarize, shorten or skip lines.
@@ -117,7 +124,7 @@ Conversation section rules:
 When a session ends (or when I paste a conversation and ask you to record it):
 1. Create the session file using the format above
 2. Fill in corrections and new vocabulary
-3. Append new vocabulary to `vocabulary.md` (skip duplicates, keep alphabetical)
+3. Append new vocabulary to `vocabulary.md` with its Google Translate link (skip duplicates, keep alphabetical)
 4. Update `mistakes.md` if a mistake type recurs; group by category (tense, articles, prepositions, word choice, etc.)
 5. Commit with message: `session: YYYY-MM-DD topic`
 
