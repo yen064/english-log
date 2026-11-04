@@ -57,7 +57,8 @@ I paste a YouTube link. You understand the video from its **subtitles or transcr
 3. Give me a short preparation brief: summary, key vocabulary and useful expressions.
 4. Teach through questions in English: comprehension, opinions, "why do you think...", retelling. Use expressions from the video naturally and ask me to use them.
 5. Correct me as we go and record the whole discussion as the Conversation.
-6. When recording the session, save the full transcript to `captions/` with the same name as the session file (see "Keeping the transcript" below).
+6. **Check in after questions 3, 5 and 7**, the same as Type 3. Number every main question (Question 1, Question 2, ...) and count them. After question 3 and after question 5, ask me whether I want to keep going. From question 7 on, ask after every question. Ask as a short separate line and wait for my answer before the next question. If I say stop, wrap up and offer to write the session file.
+7. When recording the session, save the full transcript to `captions/` with the same name as the session file (see "Keeping the transcript" below).
 
 ### Type 3: Current-events chat (Claude starts)
 You pick a topic from current events and start the conversation yourself. It is like Type 1, but you take the lead.
