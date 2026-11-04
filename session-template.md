@@ -72,7 +72,7 @@ Vocabulary link rule:
 
 Launch history rules:
 - One row per launch. A launch is one sitting: the original session, or one later continuation.
-- Type is the type of that launch (3 for the original Type 3 launch, 4 for each continuation). Question numbers is the range of numbered questions in that launch, and Count is how many.
+- Type is the type of that launch (the original type for the first launch, e.g. 1, 2 or 3; 4 for each continuation). Question numbers is the range of numbered questions in that launch, and Count is how many. A launch with no numbered questions (an original Type 1 or Type 2) shows `-` and `0`. The first continuation of such a session starts at Question 1.
 - Place the section right after the header fields and before the Summary.
 
 Conversation section rules:

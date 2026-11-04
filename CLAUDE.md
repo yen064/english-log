@@ -43,7 +43,7 @@ There are four types. Who starts, and what the material is, differs.
 | 1 | Free conversation | Me | A conversation I have with Claude |
 | 2 | Video lesson | Me (I paste a YouTube link) | The video |
 | 3 | Current-events chat | Claude | A current news topic Claude picks |
-| 4 | Continued session | Me (I pick a finished Type 3 or 4 session) | The topic of that finished session |
+| 4 | Continued session | Me (I pick a finished Type 1, 2, 3 or 4 session) | The topic of that finished session |
 
 ### Type 1: Free conversation (I start)
 I start a conversation on any topic, or paste a conversation I already had.
@@ -73,12 +73,12 @@ You pick a topic from current events and start the conversation yourself. It is 
 6. Check my wishes: if I say the topic is too hard, boring or off, switch topics.
 
 ### Type 4: Continued session (I pick a finished session)
-I continue the topic of a session that is already finished. Only a session that is currently Type 3 or Type 4 can be continued.
-1. Read `sessions.md` and list every finished Type 3 and Type 4 session as a numbered list (number, date, topic, type, number of questions). Sort by number of questions, most first. If the numbers are equal, sort by date, newest first. Wait for me to pick one.
-2. Read the chosen session file to recall the topic, my earlier answers, the corrections and the vocabulary. Remind me in one or two sentences where we stopped.
-3. Continue like Type 3: ask the next questions, follow up, challenge my opinion politely, and introduce useful expressions. **Keep the question numbering going** from the last number in that session (if it ended at Question 7, the next one is Question 8). The check-in rule continues too, so from question 7 on, ask after every question whether I want to keep going.
+I continue the topic of a session that is already finished. A finished session of any type (Type 1, 2, 3 or 4) can be continued.
+1. Read `sessions.md` and list every finished session (Type 1, 2, 3 and 4) as a numbered list (number, date, topic, type, number of questions). Sort by number of questions, most first; a `-` counts as 0. If the numbers are equal, sort by date, newest first. Wait for me to pick one.
+2. Read the chosen session file to recall the topic, my earlier answers, the corrections and the vocabulary. If the session was a Type 2 video lesson, also read its full captions in `captions/` (same name as the session file) first. Remind me in one or two sentences where we stopped.
+3. Continue like Type 3, whatever the original type was (including Type 1 and Type 2): I do not lead the conversation, you do. Ask the next questions, follow up, challenge my opinion politely, and introduce useful expressions. **Keep the question numbering going** from the last number in that session (if it ended at Question 7, the next one is Question 8). If the original session had no numbered questions (Type 1 or Type 2), start at Question 1. The check-in rule continues too, so from question 7 on, ask after every question whether I want to keep going.
 4. When I stop, update the **same file**. Never rename it and never create a new file for the same topic:
-   - Add a row to **Launch history** (see the session file format). If the session has none yet, create the section and start with a row for the original launch.
+   - Add a row to **Launch history** (see the session file format). If the session has none yet, create the section and start with a row for the original launch (its Type is the original type; for a Type 1 or Type 2 launch with no numbered questions, write `-` for Question numbers and `0` for Count).
    - Add this launch's dialogue as a new section `## Conversation, Launch N (YYYY-MM-DD)`, in the usual Conversation format, after the earlier conversation.
    - Append the new corrections to the Corrections table and the new vocabulary to New vocabulary.
    - Change the file's `**Type:**` to `4 Continued session`.

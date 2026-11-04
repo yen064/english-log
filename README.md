@@ -24,7 +24,7 @@
 | 1 | 自由對話 | 我 | 我和 Claude 的對話 | 我想聊什麼就聊什麼，或把已經有的對話貼過去，Claude 整理成 session |
 | 2 | 影片課 | 我 | YouTube 影片 | 我貼影片連結，Claude 讀懂內容後以它為教材，發問並指導我 |
 | 3 | 時事聊天 | Claude | 目前的時事 | Claude 挑一則真實的時事主題，主動跟我聊 |
-| 4 | 延續 | 我 | 已完成的 Type 3 或 4 session | 我從已完成的 session 中挑一個，Claude 接著上次的題號繼續問，並記錄在原本的檔案裡 |
+| 4 | 延續 | 我 | 已完成的 Type 1、2、3 或 4 session | 我從已完成的 session 中挑一個，Claude 接著上次的題號繼續問，並記錄在原本的檔案裡 |
 
 Type 2 的字幕用 `tools/get_transcript.py` 取得（靠 `youtube-transcript-api` 套件，裝在 `.scratch/venv`）。取得失敗時會停下來回報，並給我幾個選項，不會繞過 YouTube 的限制。解法見 [YouTube subtitles retrieved with youtube-transcript-api (2026-11-04)](archived-history/youtube-subtitles-solved-20261104.md)，之前失敗的過程見 [YouTube subtitle retrieval failed (2026-11-04)](archived-history/youtube-subtitle-retrieval-failed-20261104.md)。
 
