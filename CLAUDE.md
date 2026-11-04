@@ -18,11 +18,15 @@ These standards are a starting point. I will change them whenever my needs chang
 ```
 english-log/
 ├── sessions/          # One file per practice session
+├── archived-history/  # Records of problems and how they were investigated
 ├── vocabulary.md      # Accumulated words and phrases
 ├── mistakes.md        # Recurring mistakes, grouped by type
 ├── CLAUDE.md
 └── README.md
 ```
+
+### archived-history/
+Notes on problems we ran into and how they were investigated. One markdown file per problem, named `problem-name-in-english-YYYYMMDD.md` (kebab-case). Write new records here only when I ask.
 
 ## Session types
 There are three types. Who starts, and what the material is, differs.
